@@ -1,0 +1,525 @@
+    
+    html {
+        background: white;
+    }
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+    }
+
+    .menu,
+    .sub-menu {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .faixa {
+        background-color:blue;
+        width: 100%;
+        /* text-align: right;
+        color:white;
+        top: none;
+        height: 20px;
+        word-spacing: 12px;
+        font-size: 15px; */
+
+    }
+
+    .tel {
+        position: relative;
+        left: 69em;
+        text-align: right;
+        color:white;
+        top: none;
+        height: 2em;
+        word-spacing: 12px;
+        font-size: 20px;
+
+    }
+
+    .imagem1 {
+        width: 15em;
+        height: 6em;
+        padding-left: 8.5em;
+        padding-top: 0.3em;
+    }
+
+    .menu-container {
+        float: right;
+        text-transform: uppercase;
+        padding-top: 2em;
+        padding-right: 250px;
+        position: absolute;
+        top: 2em;
+        right: 0px;
+        z-index: 8;
+     
+    }
+
+    ul {
+       
+        margin: 0px;
+        padding: 0;
+        display: inline-block;
+
+    }
+
+    .clearfix:after {
+      
+        content: '.';
+        display: block;
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        visibility: hidden;
+        overflow: hidden;
+
+    }
+
+    .menu,
+    .sub-menu {
+        list-style: none;
+        background: white;
+      
+    }
+
+    .sub-menu {
+        background: blue;
+    }
+
+    .menu a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: gray;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+       
+    }
+
+    .menu li {
+        position: relative;
+      
+    }
+
+    .menu > li {
+        float: left;
+       
+    }
+
+    .menu > li:hover {
+        background:white;
+        color: blue;
+    }
+
+    .menu li:hover > .sub-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        min-width: 150px;
+      
+    }
+
+    .sub-menu li a {
+        color: white;
+    }
+
+    .sub-menu li:hover {
+        background: blue;
+
+    }
+
+    .sub-menu .sub-menu {
+        top: 0;
+        left: 100%;
+        
+    }
+
+    .slider-wrapper-theme-default {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-left: 8.5em;
+        padding-right: 8.5em;
+    }
+
+
+    .imagem3 {
+        width: 30em;
+        height: 20em;
+        min-width: 325px;
+        min-height: 212px;
+        position: relative;
+        top: -320px;
+        left: 860px;
+        /* width: 325px;
+        height: 212px; */
+     
+    }
+
+    .simples-texto {
+        margin: 150px;
+        font-size: 25px;
+    }
+
+    .simples-texto p {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    .boxdestaque {
+        color: gray;
+        font-size: 30px;
+        padding: 0;
+        margin-top: -280px;
+        margin-bottom: 2.5em;
+        margin-left: 4em;
+        left: 6em;
+
+    }
+
+    .box img {
+        min-width: 196px;
+        min-height: 163px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    div.box {
+       
+        max-width: 200px;
+        max-height: 300px;
+        min-width: 196px;
+        min-height: 163px;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+        margin: -180px 50px 40px 40px;
+        padding: 3.1em;
+   
+    }
+
+    div span {
+        width: 50%;
+    }
+
+
+    span {
+ 
+        /* display: table-cell; */
+        text-align: center;
+        content: 8em;
+        justify-content: center;
+        /* float: left; */
+    }
+
+    a {
+        
+        text-decoration: none; 
+        color: black;
+    }
+
+
+    footer {
+        padding: 3em;
+        background-color: black;
+        opacity: 0.7;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing: 2em;
+        color: white;
+        width: 95%;
+        /* width: 100%; */
+        /* width: 98.3%; */
+        height: 20em;
+    }
+
+    footer a {
+        width: 120px;
+        height: 30px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .rodape {
+        padding: 4em;
+        bottom: 2em;
+        font-weight: bold;
+    }
+
+
+
+
+    @media only screen and (max-width: 480px) {
+
+        /* Usando Responsive Design Mode pelo Browser Firefox 360x480*/
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tel {
+            left: 50px;
+        }
+
+        .imagem1 {
+           padding-left: 75px;
+        }
+
+        .menu-clearfix {
+            display: inline-block;
+        }
+
+        .menu-container {
+
+            text-transform: uppercase;
+            padding-top: 120px;
+            padding-right: 5px;
+            position: absolute;
+            top: 25px;
+            right: 0px;
+            z-index: 8;
+        }
+
+        .menu a {
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .menu li:hover > .sub-menu {
+            display: inline;
+        }
+
+        
+        .sub-menu {
+            display: none;
+            position: absolute;
+            min-width: 120px;
+            height: -50%;
+         
+      
+        }
+
+        .sub-menu .sub-menu {
+            top: 0;
+            left: 100%;
+        
+            
+        }
+
+        .slider-wrapper-theme-default {
+            margin-top: 120px;
+            padding-top: 120px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .simples-texto {
+            margin: 0;
+            content: 0;
+            border: 10px;
+            padding: 10px;
+        }
+
+        .imagem3 {
+            width: 125px;
+            height: 152px;
+            position: relative;
+            top: 50px;
+            left: auto;
+        }
+
+        .boxdestaque {
+            margin: 100px 5px 0 100px;
+            
+        }
+
+        div.box {
+          
+            margin: 0 -50px 40px -45px ;
+            max-width: 200px;
+            max-height: 200px;
+            display: block;
+        }
+
+        span a {
+            height: 90%;
+            padding-top: 50px;
+            margin: 50px 20px 50px 0;
+            content: 800px;
+        }
+
+        .divisoria {
+            margin: 2em;
+           
+        }
+
+        footer {
+            width: auto;
+            height: auto;
+
+        }
+
+        footer a {
+            margin: 4.5em;
+            display: block;
+         
+        }
+
+        .rodape {
+            margin: 2em;
+            display: table;
+            
+        }
+    }
+
+    /* Final do media query */
+
+
+    @media only screen and (min-width: 768px max-width: 1024px) {
+
+        /* Usando Responsive Design Mode pelo Browser Firefox 768x1024 -  Ipad*/
+
+        html { 
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tel {
+            left: 12em;
+        }
+
+        .imagem1 {
+           padding-left: 16em;
+        }
+
+        .menu-clearfix {
+            display: inline-block;
+        }
+
+        .menu-container {
+
+            text-transform: uppercase;
+            padding-top: 120px;
+            padding-right: 80px;
+            position: absolute;
+            top: 25px;
+            right: 130px;
+            z-index: 8;
+        }
+
+        .menu a {
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .menu li:hover > .sub-menu {
+            display: inline;
+        }
+
+        
+        .sub-menu {
+            display: none;
+            position: absolute;
+            min-width: 120px;
+      
+        }
+
+        .sub-menu .sub-menu {
+            top: 0;
+            left: 100%;
+            
+        }
+
+        .slider-wrapper-theme-default {
+            margin-top: 120px;
+            padding-top: 120px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .simples-texto {
+            margin: 0;
+            content: 0;
+            border: 160px;
+            padding: 160px;
+        }
+
+        .imagem3 {
+            width: 125px;
+            height: 152px;
+            position: relative;
+            top: 50px;
+            left: auto;
+        }
+
+        .boxdestaque {
+            margin: 100px 5px 0 220px;
+            
+        }
+
+        div.box {
+          
+            margin: 0 -50px 40px 150px ;
+            max-width: 200px;
+            max-height: 200px;
+            display: block;
+        }
+
+        span a {
+            height: 90%;
+            padding-top: 80px;
+            margin: 50px 20px 50px 0;
+            content: 800px;
+        }
+
+        .divisoria {
+            margin: 2em;
+           
+        }
+
+        footer {
+            width: auto;
+            height: auto;
+
+        }
+
+        footer a {
+            margin: 18em;
+            display: block;
+         
+        }
+
+        .rodape {
+            margin: 16em;
+            display: table;
+            
+        }
+    }
+
+
+   
